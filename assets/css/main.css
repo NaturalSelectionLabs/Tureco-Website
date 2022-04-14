@@ -2613,6 +2613,61 @@ input, select, textarea {
 				width: 100%;
 			}
 
+
+/* gif */
+	.gif {
+		border-radius: 0.25em;
+		border: 0;
+		display: inline-block;
+		position: relative;
+		left:-360px;
+		top:50px;
+	}
+
+		.gif img {
+			border-radius: 0.25em;
+			display: block;
+		}
+
+		.gif.left, .gif.right {
+			max-width: 40%;
+		}
+
+			.gif.left img, .gif.right img {
+				width: 100%;
+			}
+
+		.gif.left {
+			float: left;
+			margin: 0 1.5em 1em 0;
+			top: 0.25em;
+		}
+
+		.gif.right {
+			float: right;
+			margin: 0 0 1em 1.5em;
+			top: 0.25em;
+		}
+
+		.gif.fit {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+			.gif.fit img {
+				width: 100%;
+			}
+
+		.gif.main {
+			display: block;
+			margin: 0 0 3em 0;
+			width: 100%;
+		}
+
+			.gif.main img {
+				width: 100%;
+			}
 /* List */
 
 	ol {
@@ -3033,6 +3088,36 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			.spotlights > section > .gif {
+				background-position: center center;
+				background-size: cover;
+				border-radius: 0;
+				display: block;
+				position: relative;
+				width: 25em;
+			}
+	
+				.spotlights > section > .gif img {
+					border-radius: 0;
+					display: block;
+				}
+	
+				.spotlights > section > .gif:before {
+					-moz-transition: opacity 1s ease;
+					-webkit-transition: opacity 1s ease;
+					-ms-transition: opacity 1s ease;
+					transition: opacity 1s ease;
+					background: rgba(49, 36, 80, 0.9);
+					content: '';
+					display: block;
+					height: 100%;
+					left: 0;
+					opacity: 0;
+					position: absolute;
+					top: 0;
+					width: 100%;
+				}
+
 		.spotlights > section > .content {
 			padding: 4em 5em 2em 5em ;
 			display: -moz-flex;
@@ -3076,6 +3161,11 @@ input, select, textarea {
 			opacity: 1;
 		}
 
+		.spotlights > section.inactive > .gif:before,
+		body.is-preload .spotlights > section > .gif:before {
+			opacity: 1;
+		}
+
 		.spotlights > section.inactive > .content > .inner,
 		body.is-preload .spotlights > section > .content > .inner {
 			-moz-transform: translateX(-1em);
@@ -3108,6 +3198,11 @@ input, select, textarea {
 					width: 100%;
 				}
 
+				.spotlights > section > .gif {
+					width: 100%;
+					height: 50vh;
+				}
+
 				.spotlights > section.inactive > .content > .inner,
 				body.is-preload .spotlights > section > .content > .inner {
 					-moz-transform: translateY(1em);
@@ -3127,6 +3222,11 @@ input, select, textarea {
 
 			.spotlights > section > .content {
 				padding: 3em 2em 1em 2em ;
+			}
+
+			.spotlights > section > .gif {
+				height: 50vh;
+				min-height: 15em;
 			}
 
 		}
