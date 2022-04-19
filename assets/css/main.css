@@ -2992,7 +2992,7 @@ input, select, textarea {
 			}
 
 			.split.style1 > :nth-child(2n - 1) {
-				width: calc(66.66666% - 2em);
+				width: calc(50% - 2em);
 			}
 
 			.split.style1 > :nth-child(2n) {
