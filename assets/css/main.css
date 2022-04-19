@@ -3865,10 +3865,10 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #1F4474, #008776);
-				background-image: -webkit-linear-gradient(to right, #1F4474, #008776);
-				background-image: -ms-linear-gradient(to right, #1F4474, #008776);
-				background-image: linear-gradient(to right, #1F4474, #008776);
+				background-image: -moz-linear-gradient(to right, #008776, #1F4474);
+				background-image: -webkit-linear-gradient(to right, #008776, #1F4474);
+				background-image: -ms-linear-gradient(to right, #008776, #1F4474);
+				background-image: linear-gradient(to right, #008776, #1F4474);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
