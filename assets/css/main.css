@@ -2620,8 +2620,8 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
-		left:-360px;
-		top:50px;
+		/* left:-360px;
+		top:50px; */
 	}
 
 		.gif img {
@@ -3094,7 +3094,7 @@ input, select, textarea {
 				border-radius: 0;
 				display: block;
 				position: relative;
-				width: 25em;
+				width: 60em;
 			}
 	
 				.spotlights > section > .gif img {
@@ -3417,7 +3417,7 @@ input, select, textarea {
 			-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
 			-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 			transition: opacity 1s ease, transform 1s ease;
-			opacity: 1.0;
+			opacity: 1;
 		}
 
 		.wrapper.fade-up.inactive > .inner,
